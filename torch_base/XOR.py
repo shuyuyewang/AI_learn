@@ -163,8 +163,7 @@ def plot_decision_and_test_only(model, X_test, y_test, title_suffix=""):
     # 网格
     xx, yy = np.meshgrid(
         np.linspace(VIS_X_MIN, VIS_X_MAX, GRID_N),
-        np.linspace(VIS_Y_MIN, VIS_Y_MAX
-    GRID_N),
+        np.linspace(VIS_Y_MIN, VIS_Y_MAX, GRID_N),
     )
     grid = torch.tensor(np.c_[xx.ravel(), yy.ravel()], dtype=torch.float32, device=device)
 
